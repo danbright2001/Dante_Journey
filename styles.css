@@ -1,0 +1,48 @@
+/* Resetting default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.section {
+    border: 1px solid #000;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 10px;
+    float: left;
+    width: 30%; /* Adjust this value as needed for desktop view */
+}
+
+.section-title {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #ccc; /* Unique color for each section */
+    padding: 5px;
+    border: 1px solid #000;
+}
+
+/* Media queries for tablet and mobile views */
+@media screen and (max-width: 991px) {
+    .section {
+        width: 48%; /* Adjust this value for tablet view */
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .section {
+        width: 100%; /* Full width for mobile view */
+        float: none;
+    }
+}
